@@ -10,44 +10,204 @@
     <title>meetUp-Clone</title>
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-sm bg-light navbar-light p-50">
-            <a href="index.html" class="navbar-brand">
-                <img class="img-fluid" style="max-height: 44px;" src="https://secure.meetupstatic.com/s/img/5455565085016210254/logo/svg/logo--script.svg" alt="meetUp-clone"></img>
-            </a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link text-danger"><strong>Start a new group</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#explore-head-section" class="nav-link">Language</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#login-head-section" class="nav-link">Log in</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#signup-head-section" class="nav-link">Sign up</a>
-                    </li>
-                </ul>
-            </div>
-    </nav>
+  <nav class="navbar fixed-top navbar-expand-sm bg-light navbar-light p-50">
+          <a href="index.html" class="navbar-brand">
+              <img class="img-fluid" style="max-height: 44px;" src="https://secure.meetupstatic.com/s/img/5455565085016210254/logo/svg/logo--script.svg" alt="meetUp-clone"></img>
+          </a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a href="#home" class="nav-link text-danger"><strong>Start a new group</strong></a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#explore-head-section" class="nav-link">Language</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link" data-toggle="modal" data-target="#loginModal">Log in</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#signup-head-section" class="nav-link">Sign up</a>
+                  </li>
+              </ul>
+          </div>
+  </nav>
 
-    <!-- HOME SECTION -->
-    <header id="home-section">
-        <div class="container">
-            <div class="card">
-                <img class="card-sm-img-top card-lg-img-start img-fluid" src="https://source.unsplash.com/random/300x200" alt="">
-                <div class="card-body">
-                        <h4 class="card-title">Card title that wraps to a new line</h4>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
-                            is a little bit longer.</p>
-                </div>
+  <div class="modal" id="loginModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Login</h5>
+                <button class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="Username" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Password" class="form-control">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-dismiss="modal">Login</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- HOME SECTION -->
+<br>
+<br>
+<br>
+
+  <header id="home-section">
+    <div class="row">
+      <div class="card w-100">
+          <img class="card-img img-fluid" src="https://source.unsplash.com/random/1024x764" alt="">
+          <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+            <div class="flex-item">
+              <div class="d-flex">
+                <h1 class="card-title text-center w-100">The real world is calling</h1>
+              </div>
+              <div class="d-flex">
+                <p class="card-text text-center mb-4">Join a local group to meet people, try something new, or do more of what you love.</p>
+              </div>
+              <div class="d-flex">
+                <button class="btn btn-danger btn-block" type="button">Join Meetup</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  <section class="links">
+    <div class="row flex-item p-2 pl-3" style="position: relative;">
+        <a class="btn btn-outline-dark m-1" href="#" role="button">Link</a>
+        <a class="btn btn-outline-dark m-1" href="#" role="button">Link</a>
+        <a class="btn btn-outline-dark m-1" href="#" role="button">Link</a>
+    </div>
+  </section>
+
+  <section class="categories">
+    <div class="d-flex flex-column row-hl">
+      <div class="p-2 item-hl">
+        <h4>Categories</h4>
+        <p>Browse groups by topics you're interested in.</p>
+      </div>
+    </div>
+    <div class="card-colums">
+      <div class="row p-2">
+        <div class="col">
+          <div class="card" style="cursor:pointer" onclick="document.location='evenidontknow-page.html'" >
+            <img class="card-img-top img-fluid rounded" src="https://source.unsplash.com/random/300x200" alt="">
+            <p class="card-text text-dark ">Outdoors & Adventure</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="cursor:pointer" onclick="document.location='evenidontknow-page.html'" >
+            <img class="card-img-top img-fluid rounded" src="https://source.unsplash.com/random/300x200" alt="">
+            <p class="card-text text-dark ">Tech</p>
+          </div>
+        </div>
+        <div class="w-100"></div>
+        <div class="col">
+          <div class="card" style="cursor:pointer" onclick="document.location='evenidontknow-page.html'" >
+              <img class="card-img-top img-fluid rounded" src="https://source.unsplash.com/random/300x200" alt="">
+              <p class="card-text text-dark ">Family</p>
             </div>
         </div>
-    </header>
+        <div class="col">
+          <div class="card" style="cursor:pointer" onclick="document.location='evenidontknow-page.html'" >
+              <img class="card-img-top img-fluid rounded" src="https://source.unsplash.com/random/300x200" alt="">
+              <p class="card-text text-dark ">Health & Wellness</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </header>
+
+    <!-- Footer -->
+<footer class="page-footer font-small blue pt-4 bg-dark text-light">
+  <div class="container w-75">
+    <section class="section--hasSeparator">
+      <div class="row">
+        <div class="col-md-4">
+            <a href="#" class="text-left text-light" style="text-decoration: underline;">Start new group</a>
+        </div>
+      </div>
+    </section>
+
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase">Your Account</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                    <a class="text-left text-light" href="#!">Sign Up</a>
+                    </li>
+                    <li>
+                    <a class="text-left text-light" href="#!">Log In</a>
+                    </li>
+                    <li>
+                    <a class="text-left text-light" href="#!">Help</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase">Discover</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                    <a class="text-left text-light" href="#!">Groups</a>
+                    </li>
+                    <li>
+                    <a class="text-left text-light" href="#!">Topics</a>
+                    </li>
+                    <li>
+                    <a class="text-left text-light" href="#!">Calendar</a>
+                    </li>
+                    <li>
+                    <a class="text-left text-light" href="#!">Cities</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright: year()
+          <p class="year"></p>
+        <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+        </div>
+    </footer>
+    <!-- Footer -->
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
