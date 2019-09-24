@@ -69,8 +69,8 @@
 
   <header id="home-section">
     <div class="row">
-      <div class="card w-100">
-          <img class="card-img img-fluid" src="https://source.unsplash.com/random/1024x764" alt="">
+      <div class="card" style="max-height: 480px">
+          <img class="card-img img-fluid" src="https://source.unsplash.com/random/1024x1980" alt="">
           <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
             <div class="flex-item">
               <div class="d-flex">
@@ -101,43 +101,47 @@
         <p>Browse groups by topics you're interested in.</p>
       </div>
     </div>
+
+    <div class="p-2 item-hl">
     <div class="card-colums">
       <div class="row p-2">
         <div class="col">
-          <div class="card" style="cursor:pointer" onclick="document.location='evenidontknow-page.html'" >
-            <img class="card-img-top img-fluid rounded" src="https://source.unsplash.com/random/300x200" alt="">
+          <div class="card" style="cursor:pointer;" onclick="document.location='evenidontknow-page.html'" >
+            <img class="card-img-top img-fluid rounded"  style=" max-height: 190px; max-width: 400px;" src="https://source.unsplash.com/random/300x200" alt="">
             <p class="card-text text-dark ">Outdoors & Adventure</p>
           </div>
         </div>
         <div class="col">
-          <div class="card" style="cursor:pointer" onclick="document.location='evenidontknow-page.html'" >
-            <img class="card-img-top img-fluid rounded" src="https://source.unsplash.com/random/300x200" alt="">
+          <div class="card" style="cursor:pointer;" onclick="document.location='evenidontknow-page.html'" >
+            <img class="card-img-top img-fluid rounded"  style=" max-height: 190px; max-width: 400px;" src="https://source.unsplash.com/random/300x200" alt="">
             <p class="card-text text-dark ">Tech</p>
           </div>
         </div>
         <div class="w-100"></div>
         <div class="col">
-          <div class="card" style="cursor:pointer" onclick="document.location='evenidontknow-page.html'" >
-              <img class="card-img-top img-fluid rounded" src="https://source.unsplash.com/random/300x200" alt="">
+          <div class="card" style="cursor:pointer;" onclick="document.location='evenidontknow-page.html'" >
+              <img class="card-img-top img-fluid rounded" style=" max-height: 190px; max-width: 400px;" src="https://source.unsplash.com/random/300x200" alt="">
               <p class="card-text text-dark ">Family</p>
             </div>
         </div>
         <div class="col">
-          <div class="card" style="cursor:pointer" onclick="document.location='evenidontknow-page.html'" >
-              <img class="card-img-top img-fluid rounded" src="https://source.unsplash.com/random/300x200" alt="">
+          <div class="card" style="cursor:pointer;" onclick="document.location='evenidontknow-page.html'" >
+              <img class="card-img-top img-fluid rounded" style=" max-height: 190px; max-width: 400px;" src="https://source.unsplash.com/random/300x200" alt="">
               <p class="card-text text-dark ">Health & Wellness</p>
             </div>
         </div>
       </div>
     </div>
+
+  </div>
   </section>
 
   </header>
 
-    <!-- Footer -->
+<!-- Footer -->
 <footer class="page-footer font-small blue pt-4 bg-dark text-light">
   <div class="container w-75">
-    <section class="section--hasSeparator">
+    <section class="section--hasSeparator mb-2">
       <div class="row">
         <div class="col-md-4">
             <a href="#" class="text-left text-light" style="text-decoration: underline;">Start new group</a>
@@ -145,69 +149,109 @@
       </div>
     </section>
 
+      <!-- Grid column -->
+      <div class="row mt-4">
+          <div class="col-md-4">
 
-            <hr class="clearfix w-100 d-md-none pb-3">
-
-            <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
-
-                <!-- Links -->
-                <h5 class="text-uppercase">Your Account</h5>
-
-                <ul class="list-unstyled">
-                    <li>
-                    <a class="text-left text-light" href="#!">Sign Up</a>
-                    </li>
-                    <li>
-                    <a class="text-left text-light" href="#!">Log In</a>
-                    </li>
-                    <li>
-                    <a class="text-left text-light" href="#!">Help</a>
-                    </li>
-                </ul>
-
+              <!-- Links -->
+              <h5>Your Account</h5>
+              <div class="row justify-content-left my-3">
+                  <div class="col-5">
+                      <a class="text-left text-light" href="#!">Sign Up</a>
+                  </div>
+                  <div class="col-4">
+                      <a class="text-left text-light" href="#!">Log In</a>
+                  </div>
+              </div>
+              <div class="row justify-content-left">
+                  <div class="col-5">
+                      <a class="text-left text-light" href="#!">Help</a>
+                  </div>
             </div>
-            <!-- Grid column -->
+          </div>
+      </div>
 
-            <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
+      <!-- Grid column -->
+      <div class="row mt-5">
+          <div class="col-md-4">
 
-                <!-- Links -->
-                <h5 class="text-uppercase">Discover</h5>
-
-                <ul class="list-unstyled">
-                    <li>
-                    <a class="text-left text-light" href="#!">Groups</a>
-                    </li>
-                    <li>
-                    <a class="text-left text-light" href="#!">Topics</a>
-                    </li>
-                    <li>
-                    <a class="text-left text-light" href="#!">Calendar</a>
-                    </li>
-                    <li>
-                    <a class="text-left text-light" href="#!">Cities</a>
-                    </li>
-                </ul>
-
+              <!-- Links -->
+              <h5>Discover</h5>
+              <div class="row justify-content-left my-3">
+                  <div class="col-5">
+                      <a class="text-left text-light" href="#!">Groups</a>
+                  </div>
+                  <div class="col-4">
+                      <a class="text-left text-light" href="#!">Calendar</a>
+                  </div>
+              </div>
+              <div class="row justify-content-left">
+                  <div class="col-5">
+                      <a class="text-left text-light" href="#!">Topics</a>
+                  </div>
+                  <div class="col-4">
+                      <a class="text-left text-light" href="#!">Cities</a>
+                  </div>
             </div>
-            <!-- Grid column -->
+          </div>
+      </div>
 
-            </div>
-            <!-- Grid row -->
+      <div class="row mt-5">
+          <div class="col-md-4">
 
-        </div>
-        <!-- Footer Links -->
+              <!-- Links -->
+              <h5>Meetup</h5>
+              <div class="row justify-content-left my-3">
+                  <div class="col-5">
+                      <a class="text-left text-light" href="#!">About</a>
+                  </div>
+                  <div class="col-4">
+                      <a class="text-left text-light" href="#!">Meetup Pro</a>
+                  </div>
+              </div>
+              <div class="row justify-content-left">
+                  <div class="col-5">
+                      <a class="text-left text-light" href="#!">Careers</a>
+                  </div>
+                  <div class="col-4">
+                      <a class="text-left text-light" href="#!">Apps</a>
+                  </div>
+              </div>
+              <div class="row justify-content-left my-3">
+                  <div class="col-5">
+                      <a class="text-left text-light" href="#!">API</a>
+                  </div>
+                  <div class="col-4">
+                      <a class="text-left text-light" href="#!">Accessibility</a>
+                  </div>
+              </div>
+          </div>
+      </div>
 
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2018 Copyright: year()
-          <p class="year"></p>
-        <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-        </div>
-        <!-- Copyright -->
-        </div>
-    </footer>
-    <!-- Footer -->
+    <!-- Grid column -->
+<div class="col text-center my-5">
+    <h6 class="my-3">Follow us</h6>
+    <a class="social mr-4" style="text-decoration : none; color:#fff" href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-lg"></i></a>
+    <a class="social mr-4" style="text-decoration : none; color:#fff" href="https://twitter.com/Meetup/"><i class="fab fa-twitter fa-lg"></i></a>
+    <a class="social mr-4" style="text-decoration : none; color:#fff" href="https://youtube.com/"><i class="fab fa-youtube fa-lg"></i></a>
+    <a class="social mr-4" style="text-decoration : none; color:#fff" href="https://instagram.com"><i class="fab fa-instagram fa-lg"></i></a>
+    <a class="social" style="text-decoration : none; color:#fff" href="https://medium.com"><i class="fab fa-medium fa-lg"></i></a>
+
+  </div>
+
+
+
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+      <div class="col text-center">
+        <p> &copy; meetUp-Clone <span id="year"></span></p>
+      </div>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
