@@ -37,6 +37,22 @@ body {
     padding:10px 0 32px;
 }
 
+#login {
+    min-height: 646px;
+    background-color: #ffffff
+}
+
+.docBounds {
+    height: 48px;
+    width: 100%;
+    background-color: #ffffff;
+    display: block;
+}
+
+.btn-face {
+    background-color: #3b5998;
+}
+
 /* .social {
     text-decoration : none;
     color : #fff;
